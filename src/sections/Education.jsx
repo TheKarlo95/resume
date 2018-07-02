@@ -9,8 +9,9 @@ export const Education = ({schools}) => {
       <SectionTitle>Education</SectionTitle>
       <div>
         {
-          schools.map(school => (
+          schools.map((school, index) => (
             <Job
+              key={index}
               company={school.name}
               title={school.title}
               duration={school.duration}

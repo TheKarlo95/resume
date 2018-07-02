@@ -9,8 +9,9 @@ export const Experience = ({jobs}) => {
       <SectionTitle>Experience</SectionTitle>
       <div>
         {
-          jobs.map(job => (
+          jobs.map((job, index) => (
             <Job
+              key={index}
               company={job.company}
               title={job.title}
               duration={job.duration}

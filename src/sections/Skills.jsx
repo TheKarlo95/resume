@@ -22,10 +22,10 @@ export const Skills = ({skills, description}) => {
       <div>
         <SkillsContainer>
           {
-            skills.map(subskills => {
+            skills.map((subskills, index) => {
               return (
-                <ul>
-                  {subskills.map(skill => <li>{skill}</li>)}
+                <ul key={index}>
+                  {subskills.map((skill, index) => <li key={index}>{skill}</li>)}
                 </ul>
               )
             })
@@ -39,5 +39,5 @@ export const Skills = ({skills, description}) => {
 }
 Skills.propTypes = {
   description: PropTypes.string.isRequired,
-  skills: PropTypes.arrayOf(PropTypes.string).isRequired
+  skills: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired
 }
