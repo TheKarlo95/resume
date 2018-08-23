@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 
 import { Job, SectionTitle } from '../components'
 
-export const Education = ({schools}) => {
+export const Education = ({schools, language}) => {
   return (
     <section>
-      <SectionTitle>Education</SectionTitle>
+      <SectionTitle>{language == 'en' ? 'Education' : 'Edukacija'}</SectionTitle>
       <div>
         {
           schools.map((school, index) => (

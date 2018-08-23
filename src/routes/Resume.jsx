@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+  import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -56,7 +56,9 @@ export class Resume extends Component {
   }
 
   componentDidMount() {
-    this.getResumeInfo(this.language).then(resume => this.setState(resume))
+    this.getResumeInfo(this.language).then(resume => {
+      this.setState(resume)
+    }).catch(err => console.log(err))
   }
 
   render () {
@@ -69,13 +71,21 @@ export class Resume extends Component {
           telephone={this.state.telephone}
           description={this.state.description}
         />
-        <Experience jobs={this.state.jobs} />
-        <Education schools={this.state.education} />
+        <Experience
+          language={this.language}
+          jobs={this.state.jobs}
+        />
+      <div style={{height: '35px'}}/>
+        <Education
+          language={this.language}
+          schools={this.state.education}
+        />
         <Skills
+          language={this.language}
           description={this.state.skills.description}
           skills={this.state.skills.skills}
         />
-        <Interests />
+        <Interests language={this.language} />
       </Container>
     )
   }

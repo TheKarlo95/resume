@@ -2,7 +2,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
   xml:space="preserve"
   version="1.1"
   x="0px"
@@ -12,8 +11,8 @@
   viewBox="0 0 50 50"
   enable-background="new 0 0 50 50"
 >
-<text x="10" y="20" style="font-family:sans-serif">K</text>
-<text x="30" y="40" style="font-family:sans-serif">V</text>
+<text x="10" y="20" style="font-family:sans-serif">D</text>
+<text x="30" y="40" style="font-family:sans-serif">L</text>
   <line
     style="stroke-width:1;stroke:#333"
     x1="5"

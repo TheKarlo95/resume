@@ -15,10 +15,10 @@ const SkillsContainer = styled.div`
     list-style-type: disc;
   }
 `
-export const Skills = ({skills, description}) => {
+export const Skills = ({language, skills, description}) => {
   return (
     <section>
-      <SectionTitle>Skills</SectionTitle>
+      <SectionTitle>{language == 'en' ? 'Skills' : 'Vještine'}</SectionTitle>
       <div>
         <SkillsContainer>
           {

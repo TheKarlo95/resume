@@ -1,55 +1,42 @@
 {
-  "name": "Karlo Vrbić",
-  "occupation": "Junior Android Developer",
-  "email": "vrbic.karlo@gmail.com",
-  "telephone": "+385958569156",
-  "description": "Junior Android i cross-platform developer zainteresiran za sve vrste front-end i mobilnih tehnologija. Dobro upoznat sa razvojem Android aplikacija pomoću Java i Kotlin programskih jezika te razvojem mobilnih aplikacija pomoću Ionic i Crodova frameworka.",
+  "name": "Darko Lovrenčec",
+  "occupation": "Customer Support Specialist",
+  "email": "lovrencec@hotmail.com",
+  "telephone": "+385914691030",
+  "description": "Specijalist korisničke podrške, zainteresiran za unaprijeđenje procesa i konstantno napredovanje i učenje, sa izvrsnim komunikacijskim, edukacijskim i tehničkim vještinama.",
   "jobs": [
     {
-      "company": "Combis",
-      "title": "Mobile cross-platform developer",
-      "duration": "Svi 2017 - current",
-      "description": "Razvijanje cross-platform aplikacija s Ionic, Cordove i Angular framework-om te razvoj nativnih Android aplikacija s Kotlinom. Kratki rad na održavanju Java back-end applikacije razvijene sa Strut framework-om."
+      "company": "VIPnet d.o.o.",
+      "title": "Back office and Complaint Specialist",
+      "duration": "Ruj 2016 - trenutno",
+      "description": "Specijalist za korisničke prigovore, odgovaranje na korisničke prigovore većinom u pisanom obliku, te ispravljanje grešaka u uslugama i naplati."
     },
     {
-      "company": "Asseco SEE",
-      "title": "Android developer",
-      "duration": "Sij 2017 - Tra 2017",
-      "description": "Razvijanje novih funkcionalnosti i popravljanje bugova na Android mobilnoj aplikaciji za Unicredit banku. U razvoju aplikacije korišten je programski jezik Java i projekt je sastavljen od više modula, flavora i library-a za funkcionalnosti poput skeniranja."
+      "company": "Sport Vision d.o.o.",
+      "title": "Zamjenik voditelja",
+      "duration": "Pro 2013 - Ruj 2016",
+      "description": "Izrada rasporeda, vođenje smjene, zaprimanje i otpremanje robe, te prodaja prozvoda i briga o poslovnici."
     },
     {
-      "company": "T-Com",
-      "title": "Pomoćni poslovi u odjelu geodezije",
-      "duration": "Srp 2013 - Pro 2014",
-      "description": "Pomoć pri dokumentiranju i GPS označavanju postojeće telekomunikacijske infrastrukture. Izrada dokumentacije infrastrukture u AutoCAD-u."
+      "company": "Studio Moderna d.o.o.",
+      "title": "Prodajni predstavnik",
+      "duration": "Lip 2013 - Ruj 2013",
+      "description":"Prodaja proizvoda u svakodnevnom kontaktu sa kupcima."
     }
   ],
   "education": [
     {
-      "name": "Sveučilište u Zagrebu",
-      "title": "Sveučilišni prvostupnik inženjer računarstva",
-      "duration": "Ruj 2013 - Velj 2018",
-      "description": "Modul: Programsko inženjerstvo i informacijski sustavi. Vještine: Osnove programskog jezika Java"
-    },
-    {
-      "name": "Infinum Academy",
-      "title": "Android development",
-      "duration": "Jul 2016 - Aug 2016",
-      "description": "Infinumov tečaj gdje polaznici uče razvoj Android aplikacija kroz razvoj CRUD Pokemon aplikacije"
-    },
-    {
-      "name": "Tehnička škola Ruđer Bošković",
-      "title": "Tehničar za računalstvo",
+      "name": "Tehnička škola Fausta Vračića",
+      "title": "Stojarski Tehničar",
       "duration": "Ruj 2009 - Svi 2013",
       "description": ""
     }
   ],
   "skills": {
-    "description": "Moje vještine su uglavnom mješavina front-end i mobilnih tehnologija s manje znanja back-end tehnologija temeljenih na Javi i Javascriptu.",
+    "description": "Moje najizraženije vještine su pisana i usmena komunikacija uz izvrsnu tehničku pismenost. Iznimno sam profesionalan i orijentiran na pružanje rješenja i unaprijeđenje usluga i podrške.",
     "skills": [
-      ["Java", "Kotlin", "Javascript", "Typescript"],
-      ["Android", "Ionic", "Angular", "React"],
-      ["NodeJS", "ExrpressJS", "Spring", "JAX-RS"]
+      ["Word", "Excel", "Linux", "Windows"],
+      ["AutoCAD", "CATIA", "Oracle"]
     ]
   }
 }

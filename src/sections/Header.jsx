@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import { EmailLink, TelephoneLink } from '../components'
 import Logo from '../images/logo.svg'
+import Support from '../images/support.svg'
 
 const Name = styled.div`
   font-size: 48px;
@@ -21,6 +22,11 @@ const Links = styled.div`
 const AvatarImg = styled.img`
   width: 130px;
 `
+const OccupationImage = styled.div`
+  display: inline;
+  height: 35px;
+  opacity: 0.75;
+`
 export const Header = ({name, occupation, email, telephone, description}) => {
   return (
     <section>
@@ -31,7 +37,10 @@ export const Header = ({name, occupation, email, telephone, description}) => {
       </div>
       <div>
         <Name>{name}</Name>
-        <Occupation>{occupation}</Occupation>
+        <Occupation>
+          <img style={{display: 'inline', height: '30px', opacity: 0.75, marginRight: '18px'}} src={Support} />
+          {occupation}
+        </Occupation>
         <Links>
           <EmailLink email={email}/>
           <TelephoneLink number={telephone}/>
