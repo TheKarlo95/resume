@@ -1,0 +1,342 @@
+\documentclass[theme]{cv_style}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage{xcolor}
+\usepackage[a4paper, portrait, margin=0cm]{geometry}
+\usepackage{fontawesome}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[pdftex, pdfauthor={Karlo Vrbić}, pdftitle={Karlo Vrbić, Public CV}, pdfsubject={CV of Karlo Vrbić},
+pdfkeywords={CV, Resume, Software, Engineer, Android, Tech}]
+{hyperref}
+
+
+
+
+\begin{document}
+%------------------------------------------------------------------ Variables
+% The left column contains the goals, summary, skills, etc.
+% We define its width w.r.t. the width of the whole page
+\newcommand{\lratio}{0.31}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{\lratio\textwidth}
+% The right column contains the main content, i.e. work experience, education, etc.
+\newcommand{\rratio}{0.7}
+\newlength{\rightcolwidth}
+\setlength{\rightcolwidth}{\rratio\textwidth}
+% Space to leave below a section, above the title of the following section
+\newlength{\sectionspace}
+\setlength{\sectionspace}{1cm}
+% Space to leave below an item, above the following item
+\newlength{\itemspace}
+\setlength{\itemspace}{10pt}
+% fbox stuff. You won't need to adjust these. You can safely ignore.
+\setlength{\fboxrule}{0pt}
+\setlength{\fboxsep}{4pt}
+% Shortcuts to have table columns with fixed width AND positionning: [L]eft, [C]enter, [R]ight
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% Removes the (ugly) box around html links
+\hypersetup{hidelinks}
+%------------------------------------------------------------------
+\title{Karlo Vrbić}
+\author{\LaTeX{} Karlo Vrbić}
+\date{2023}
+
+
+
+    %-------------------------------------------------------------
+    %-------------------------------------------------------------
+    %-------------------------------------------------------------
+    %                       UPPER PART
+    %-------------------------------------------------------------
+    %-------------------------------------------------------------
+    %-------------------------------------------------------------
+
+    %-------------------------------------------------------------
+    %                       HEADER
+    %-------------------------------------------------------------
+    % Usage: \header{background-color}{name-color}{name}{title-color}{title}{summary-color}{summary}{portrait.jpg}{email@example.com}{phone}{country-flag.png}{city}{linkedin-id}
+    \header
+    {Karlo Vrbić}
+    {Bachelor of Science in Computing $\cdot$ Senior Android Developer}
+    {
+        When I am not writing high quality code, I love reading and learning about new\\
+        developments in Android and software world in general, educate my coworkers, create\\
+        presentations, discuss and improve development processes and overall cheer and motivate\\
+        my coworkers to do better and to have fun doing it.% Do NOT end with a newline
+    }
+    {assets/portrait.jpg}
+
+    %-------------------------------------------------------------
+    %                       CONTACT BAND
+    %-------------------------------------------------------------
+    % Usage: \contactband{background-color}{text-color}{email}{phone-number}{country-flag}{city}{linkedin-id}
+    \contactband{assets/flag-croatia.png}{Zagreb}{vrbic.karlo@gmail.com}{+385958569156}{karlo-vrbic}{TheKarlo95}{karlo-vrbic}
+
+    \vspace{\headerheight} % The header is only a TIKZ image. We must give it space to appear and not be hidden by what comes next.
+
+    \setlength{\columnsep}{0px}
+    \columnratio{\lratio}
+    \begin{paracol}{2}
+        \paracolbackgroundoptions
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %                       LEFT COLUMN
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        \begin{leftcolumn*} \noindent \footnotesize
+            {\color{white}
+            %-------------------------------------------------------------
+            %                       GOALS
+            %-------------------------------------------------------------
+            \heading{\faCompass}{Goals}
+            \begin{minipage}[r]{\leftcolwidth}
+                \goal{\faAndroid}{I am looking for opportunities to do fun projects, expand my knowledge, improve development process and environment where all stakeholders enjoy the process of creating new products.}
+                \vspace{\itemspace}\\
+                \goal{\faBook}{I am passionate about sharing my knowledge and experience with my coworkers. I also love learning from them and being challenged by their new ideas.}
+                \vspace{\itemspace}\\
+                \goal{\faLink}{I enjoy connecting with people, exchanging ideas, different perspectives and I use every opportunity to grow professionally.}
+                \vspace{\itemspace}\\
+                \goal{\faHourglassHalf}{I like having time to think my ideas through carefully and to execute tasks well enough.}
+            \end{minipage}
+
+            %-------------------------------------------------------------
+            %                       SKILLS
+            %-------------------------------------------------------------
+            \vspace{1.75\sectionspace}
+            \heading{\faPuzzlePiece}{Skills}
+            \begin{minipage}[c]{\leftcolwidth}
+                \begin{tabular}{c}
+                    \hspace{-3pt}\bubblediagram{
+                    % Usage: \bubblediagram{list of comma-separated text items}
+                    % The first item will be written in the main bubble, at the center of the diagram
+                    % All other items will be written in their own satellite bubble
+                        % Main bubble
+                        {\textbf{Android} \\ \textbf{Development}},
+                        % Satellites
+                        Teaching,
+                        Engineering,
+                        Research,
+                        Collaboration,
+                        Problem\\solving,
+                        Agile\\developemnt}
+                \end{tabular}
+            \end{minipage}
+        }
+        \end{leftcolumn*}
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %                       RIGHT COLUMN
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        \begin{rightcolumn}\noindent \small
+            %-------------------------------------------------------------
+            %                       WORK EXPERIENCE
+            %-------------------------------------------------------------
+            \hspace{-2.4pt}\heading{\faSuitcase}{Work Experience}
+            % CINNAMON
+            \href{https://www.cinnamon.agency}{
+            \cvevent{Mar 2023}{Currently}{Senior Android Developer}{Cinnamon}{Zagreb, Croatia}{assets/logo-cinnamon.jpg}
+            {Working in a digital agency on a BLE-powered Android app. Development of new feature, maintenance of the app and close collaboration with other team members to ensure that the app meets user needs and integrates seamlessly with the rest of the system was only a few of my responsibilities.}}
+            \vspace{\itemspace}\\
+            % AZIKUS
+            \href{https://www.azikus.com}{
+            \cvevent{Jul 2020}{Mar 2023}{Senior Android Developer}{Azikus}{Zagreb, Croatia}{assets/logo-azikus.png}
+            {Develop, plan, and collaborate closely with stakeholders to create mobile apps and improve the development process. Mentor and educate colleagues.}}
+            \vspace{\itemspace}\\
+            % OPENDYNAMIC
+            \href{https://opendynamic.de/}{
+            \cvevent{Sep 2019}{Jul 2020}{Android Developer}{OpenDynamic}{Remote $\cdot$ Mannheim, Germany}{assets/logo-opendynamic.png}
+            {Planning, designing and development of a mobile ERP Android application for warehouse order scanning and tracking on a part-time freelance basis.}}
+            \vspace{\itemspace}\\
+            % UNDABOT
+            \href{https://undabot.com/}{
+            \cvevent{Sep 2018}{Dec 2019}{Android Developer}{Undabot}{Zagreb, Croatia}{assets/logo-undabot.png}
+            {Developing Android apps like the A1 mobile app, the FOREO online shopping app, and many others. Also developing a standalone messenger library for quick chat/messaging integration in other apps.}}
+            \vspace{\itemspace}\\
+            % COMBIS
+            \href{https://www.combis.hr/}{
+            \cvevent{May 2017}{Sep 2018}{Mobile Cross-Platform Developer}{Combis}{Zagreb, Croatia}{assets/logo-combis.jpg}
+            {Cross-platform mobile app development with Ionic, Cordova, and Angular, and native Android app development with Kotlin. Also, minor Java back-end development with the Struts framework.}}
+            \vspace{\itemspace}\\
+            % ASSECO SEE
+            \href{https://see.asseco.com/}{
+            \cvevent{Jan 2017}{Apr 2017}{Android Developer}{Asseco SEE}{Zagreb, Croatia}{assets/logo-asseco-see.jpg}
+            {Android development for Unicredit bank, including feature development and bug fixing in Java, with multiple modules, flavors, and libraries for various features like scanning.}}
+            \vspace{0.1cm}\\
+            \fbox{
+                Work experience prior to January 2017 is not of software development nature but visible on
+            }%\fbox
+            \\
+            \fbox{
+                \href{https://www.linkedin.com/in/karlo-vrbic}{\faLinkedinSquare \ \textbf{LinkedIn}}.
+            }%\fbox
+            \vspace{0.2cm}\\
+        \end{rightcolumn}
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %                       LEFT COLUMN
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        \begin{leftcolumn*}\noindent \footnotesize
+        {\color{white}
+            %-------------------------------------------------------------
+            %                       TECH
+            %-------------------------------------------------------------
+            \heading{\faWrench}{Tech}
+            \begin{minipage}[c]{\leftcolwidth}
+                \begin{tabular}{r|l}
+                    Agile development & \pictofraction{3}\\[0.3em]
+                    Bluetooth Low Energy & \pictofraction{2}\\[0.3em]
+                    Communication & \pictofraction{3}\\[0.3em]
+                    Design patterns & \pictofraction{4}\\[0.3em]
+                    Git & \pictofraction{4}\\[0.3em]
+                    Java & \pictofraction{5}\\[0.3em]
+                    Jetpack Compose & \pictofraction{3}\\[0.3em]  
+                    Kotlin & \pictofraction{5}\\[0.3em]
+                    OOP Principles & \pictofraction{4}\\[0.3em]
+                    Team leading & \pictofraction{2}\\[0.3em]
+                    Testing & \pictofraction{2}
+                \end{tabular}
+            \end{minipage}
+        }
+        \end{leftcolumn*}
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %                       RIGHT COLUMN
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        \begin{rightcolumn}\noindent \small
+            %-------------------------------------------------------------
+            %                       STRENGTHS
+            %-------------------------------------------------------------
+            \hspace{-2.4pt}\heading{\faHeartbeat}{Interests \& Expertise}
+            \fbox{
+                \begin{minipage}[r]{0.84\rightcolwidth}
+                    \cvkeyword{Agile Development}
+                    \cvkeyword{Android Development}
+                    \cvkeyword{Gradle}
+                    \cvkeyword{Clean Architecture}
+                    \cvkeyword{Decompose/RIBs architecture}
+                    \cvkeyword{Kotlin Multiplatform}
+                    \cvkeyword{Project Managment}
+                    \cvkeyword{Team lead}
+                    \cvkeyword{Tech Lead}
+                \end{minipage}
+            }%\fbox
+        \end{rightcolumn}
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %                       PAGE 2
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        \newpage
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %                       LEFT COLUMN
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        \begin{leftcolumn*} \noindent \footnotesize
+        {\color{white}
+            %-------------------------------------------------------------
+            %                       LANGUAGES
+            %-------------------------------------------------------------
+            \phantom{} \\ % To leave a margin with the top of the page
+            \heading{\faGlobe}{Languages}
+            \begin{minipage}[r]{\leftcolwidth}
+                \begin{tabular}{r|l}
+                    English & Working knowledge\\[0.3em]
+                    Croatian & Mother tongue
+                \end{tabular}
+            \end{minipage}
+            \vspace{\sectionspace}
+        }
+        \end{leftcolumn*}
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %                       RIGHT COLUMN
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        \begin{rightcolumn}\noindent \small
+            %-------------------------------------------------------------
+            %                     FORMAL-EDUCATION
+            %-------------------------------------------------------------
+            \phantom{} \\ % To leave a margin with the top of the page
+            \heading{\faGraduationCap}{Formal Education}
+            % UNIVERSITY OF ZAGREB - MASTER
+            \href{https://www.fer.unizg.hr/}{
+            \cvevent{Sep 2018}{Jul 2020}{Master of Software Engineering}{University of Zagreb, Faculty of Electrical Engineering and Computing}{Zagreb, Croatia}{assets/logo-unizg.jpg}
+            {The University of Zagreb Faculty of Electrical Engineering and Computing (FER) is the largest technical faculty in Croatia and the leading educational and research institution in the fields of electrical engineering, computing, and information and communication technology. It offers undergraduate, graduate, and doctoral programs in a wide range of disciplines.}}
+            \vspace{\itemspace}\\
+            % UNIVERSITY OF ZAGREB - BACHELOR
+            \href{https://www.fer.unizg.hr/}{
+            \cvevent{Sep 2013}{Jul 2018}{Bachelor of Software Engineering}{University of Zagreb, Faculty of Electrical Engineering and Computing}{Zagreb, Croatia}{assets/logo-unizg.jpg}
+            {The University of Zagreb Faculty of Electrical Engineering and Computing (FER) is the largest technical faculty in Croatia and the leading educational and research institution in the fields of electrical engineering, computing, and information and communication technology. It offers undergraduate, graduate, and doctoral programs in a wide range of disciplines.}}
+            \vspace{\itemspace}\\
+            % UNIVERSITY OF ZAGREB - BACHELOR
+            \href{https://www.tsrb.hr/}{
+            \cvevent{Sep 2009}{May 2013}{Bachelor of Software Engineering}{Technical School Ruđer Bošković}{Zagreb, Croatia}{assets/logo-tsrb.png}
+            {Technical school Ruđer Bošković is a technical school in Zagreb, Croatia. It was founded in 1948 and is one of the oldest and most prestigious technical schools in the country. The school offers a variety of programs in electrical engineering, computer science, and other technical fields.}}
+            \vspace{\itemspace}\\
+        \vspace{\sectionspace}
+        \end{rightcolumn}
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %                       LEFT COLUMN
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        \begin{leftcolumn*}\noindent \footnotesize
+        {\color{white}
+            %-------------------------------------------------------------
+            %                       PHILOSOPHY
+            %-------------------------------------------------------------
+            \heading{\faQuoteLeft}{Philosophy}
+            \fbox{
+                \begin{minipage}[l]{0.9\leftcolwidth}
+                    Here are some thoughts that guide my\\
+                    actions as a software engineer and Android developer.\\[1em]
+                    \simplequote{Any fool can write code that a computer can understand. Good programmers write code that humans can understand.}{Martin Fowler}
+                    \vspace{\itemspace}\\
+                    \simplequote{Good programmers use their brains, but good guidelines save us having to think out every case.}{Francis Glassborow}
+                    \vspace{\itemspace}\\
+                    \simplequote{Software and cathedrals are much the same; first we build them, then we pray.}{Anonymous}
+                    \vspace{\itemspace}\\
+                    \simplequote{Android development is a challenging but rewarding career. If you're passionate about building great software, then Android development is a great option for you.}{Jake Wharton}
+                    \vspace{\itemspace}\\
+                    \simplequote{\faAsterisk Grrhh \faAsterisk \\Who wrote this?\\ \faAsterisk looks up git blame \faAsterisk \\ \faAsterisk find out it's me months ago \faAsterisk \\ It's okay I guess \faSmileO}{Me (ha ha)}
+                \end{minipage}
+            }%\fbox
+        } % \color{white}
+        \end{leftcolumn*}
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        %                       RIGHT COLUMN
+        %-------------------------------------------------------------
+        %-------------------------------------------------------------
+        \begin{rightcolumn}\noindent \small
+            %-------------------------------------------------------------
+            %                       SELF-EDUCATION
+            %-------------------------------------------------------------
+            \hspace{-2.4pt}\heading{\faTv}{Non-Formal Education}
+            % INFINUM ACADEMY
+            \href{https://infinum.academy/}{
+            \cvevent{Jul 2016}{Aug 2016}{Android developmentg}{Infinum Academy}{Zagreb, Croatia}{assets/logo-infinum.jpg}
+            {Infinum Academy is an educational program that puts theory into practice. Through weeks of lectures, assignments, and 1-on-1 mentorship, participants develop industry-relevant skills and learn about building functional digital products, all the while guided by acclaimed industry professionals.}}
+
+            %-------------------------------------------------------------
+            %                       PUBLICATIONS
+            %-------------------------------------------------------------
+            \vspace{\sectionspace}
+            \heading{\faBook}{Publications}
+            % Usage: \publication{1:date}{2:title}{3:publisher}{4:publisher-logo}{5:text}
+            \href{https://medium.com/azikus/android-how-to-handle-taps-247140d196e9}{
+            \publication{Jan 2021}{Android — How to handle taps?}{Medium.com}{assets/logo-medium.png}
+            {Blog post on how to handle user clicks and gestures and prevent some unwanted side effects. Check it out on \faMedium \ \textbf{Medium}.}}
+        \end{rightcolumn}
+        \vspace{20em}
+    \end{paracol}
+\end{document}
